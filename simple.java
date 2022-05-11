@@ -69,8 +69,7 @@ class Painter
 		 Shape square = shapeFactory.getShape("Square");
 		 square.draw();
 		 
-		 Shape rombus = shapeFactory.getShape("Rombus");
-		 rombus.draw();
+		 
 		 
 
 	 }
