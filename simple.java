@@ -24,7 +24,7 @@ class Square implements Shape
 	 public void draw()
 	 {
 		 System.out.println("a square drawn");
-                                 System.out.println("it is a basic drawing");
+         System.out.println("it is a basic drawing");
 	 }
 }
 
@@ -34,31 +34,11 @@ class Rectangle implements Shape
 	 public void draw()
 	 {
 		 System.out.println("a rectangle drawn");
-                                 System.out.println("it is a basic drawing");
+         System.out.println("it is a basic drawing");
 	 }
 }
 
-
-class ShapeFactory
-{
- 
-	 public Shape getShape(String type) throws Exception
-	 {
-		 switch (type)
-		 {
-			 case "Circle":
-				 return new Circle();
-			 case "Square":
-				 return new Square();
-			 case "Rectangle":
-				 return new Rectangle();
-			 default:
-				 throw new Exception( "Shape type : "+type+" cannot be instantiated");
-		 }
-	 }
-}
-
-public class ShapeFactory {
+class ShapeFactory {
    public Shape getShape(String shapeType){
       if(shapeType == null){
          return null;
@@ -88,9 +68,6 @@ class Painter
 		 circle.draw();
 		 Shape square = shapeFactory.getShape("Square");
 		 square.draw();
-		 
-		 
-		 
 
 		//get an object of Circle and call its draw method.
 	      Shape shape1 = shapeFactory.getShape("CIRCLE");
